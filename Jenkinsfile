@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        build 'full-build'
+        git(url: 'https://github.com/gwa2100/AuctionPlatform.git', branch: 'master')
       }
     }
   }
